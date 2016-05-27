@@ -13,7 +13,20 @@
 		A90E70891CF8824100541DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90E70871CF8824100541DCC /* Main.storyboard */; };
 		A90E708B1CF8824100541DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90E708A1CF8824100541DCC /* Assets.xcassets */; };
 		A90E708E1CF8824100541DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90E708C1CF8824100541DCC /* LaunchScreen.storyboard */; };
+		A90E70991CF882A000541DCC /* XQSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E70981CF882A000541DCC /* XQSafe.m */; };
+		A90E70A81CF882B200541DCC /* XQSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E70981CF882A000541DCC /* XQSafe.m */; };
+		A90E70AA1CF882CC00541DCC /* XQSafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E70A91CF882CC00541DCC /* XQSafeTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90E70A31CF882AB00541DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90E70731CF8824000541DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90E707A1CF8824000541DCC;
+			remoteInfo = XQKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A90E707B1CF8824000541DCC /* XQKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XQKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +39,22 @@
 		A90E708A1CF8824100541DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90E708D1CF8824100541DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A90E708F1CF8824100541DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90E70971CF882A000541DCC /* XQSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSafe.h; sourceTree = "<group>"; };
+		A90E70981CF882A000541DCC /* XQSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSafe.m; sourceTree = "<group>"; };
+		A90E709E1CF882AB00541DCC /* XQKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XQKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90E70A21CF882AB00541DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90E70A91CF882CC00541DCC /* XQSafeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSafeTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A90E70781CF8824000541DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90E709B1CF882AB00541DCC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				A90E707D1CF8824000541DCC /* XQKit */,
+				A90E709F1CF882AB00541DCC /* XQKitTests */,
 				A90E707C1CF8824000541DCC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				A90E707B1CF8824000541DCC /* XQKit.app */,
+				A90E709E1CF882AB00541DCC /* XQKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +89,7 @@
 				A90E70821CF8824000541DCC /* AppDelegate.m */,
 				A90E70841CF8824100541DCC /* ViewController.h */,
 				A90E70851CF8824100541DCC /* ViewController.m */,
+				A90E70951CF882A000541DCC /* XQKit */,
 				A90E70871CF8824100541DCC /* Main.storyboard */,
 				A90E708A1CF8824100541DCC /* Assets.xcassets */,
 				A90E708C1CF8824100541DCC /* LaunchScreen.storyboard */,
@@ -77,6 +105,32 @@
 				A90E707F1CF8824000541DCC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A90E70951CF882A000541DCC /* XQKit */ = {
+			isa = PBXGroup;
+			children = (
+				A90E70961CF882A000541DCC /* XQSafe */,
+			);
+			path = XQKit;
+			sourceTree = "<group>";
+		};
+		A90E70961CF882A000541DCC /* XQSafe */ = {
+			isa = PBXGroup;
+			children = (
+				A90E70971CF882A000541DCC /* XQSafe.h */,
+				A90E70981CF882A000541DCC /* XQSafe.m */,
+			);
+			path = XQSafe;
+			sourceTree = "<group>";
+		};
+		A90E709F1CF882AB00541DCC /* XQKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A90E70A91CF882CC00541DCC /* XQSafeTests.m */,
+				A90E70A21CF882AB00541DCC /* Info.plist */,
+			);
+			path = XQKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +153,24 @@
 			productReference = A90E707B1CF8824000541DCC /* XQKit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A90E709D1CF882AB00541DCC /* XQKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90E70A51CF882AB00541DCC /* Build configuration list for PBXNativeTarget "XQKitTests" */;
+			buildPhases = (
+				A90E709A1CF882AB00541DCC /* Sources */,
+				A90E709B1CF882AB00541DCC /* Frameworks */,
+				A90E709C1CF882AB00541DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90E70A41CF882AB00541DCC /* PBXTargetDependency */,
+			);
+			name = XQKitTests;
+			productName = XQKitTests;
+			productReference = A90E709E1CF882AB00541DCC /* XQKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +182,10 @@
 				TargetAttributes = {
 					A90E707A1CF8824000541DCC = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					A90E709D1CF882AB00541DCC = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A90E707A1CF8824000541DCC;
 					};
 				};
 			};
@@ -127,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				A90E707A1CF8824000541DCC /* XQKit */,
+				A90E709D1CF882AB00541DCC /* XQKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +219,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A90E709C1CF882AB00541DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,10 +236,28 @@
 				A90E70861CF8824100541DCC /* ViewController.m in Sources */,
 				A90E70831CF8824000541DCC /* AppDelegate.m in Sources */,
 				A90E70801CF8824000541DCC /* main.m in Sources */,
+				A90E70991CF882A000541DCC /* XQSafe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90E709A1CF882AB00541DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90E70A81CF882B200541DCC /* XQSafe.m in Sources */,
+				A90E70AA1CF882CC00541DCC /* XQSafeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90E70A41CF882AB00541DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90E707A1CF8824000541DCC /* XQKit */;
+			targetProxy = A90E70A31CF882AB00541DCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A90E70871CF8824100541DCC /* Main.storyboard */ = {
@@ -281,6 +383,30 @@
 			};
 			name = Release;
 		};
+		A90E70A61CF882AB00541DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XQKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.XQKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XQKit.app/XQKit";
+			};
+			name = Debug;
+		};
+		A90E70A71CF882AB00541DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XQKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.XQKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XQKit.app/XQKit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +424,14 @@
 			buildConfigurations = (
 				A90E70931CF8824100541DCC /* Debug */,
 				A90E70941CF8824100541DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A90E70A51CF882AB00541DCC /* Build configuration list for PBXNativeTarget "XQKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90E70A61CF882AB00541DCC /* Debug */,
+				A90E70A71CF882AB00541DCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

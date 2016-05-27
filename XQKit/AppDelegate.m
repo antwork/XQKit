@@ -16,6 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+//    [dict setObject:[NSNull null] forKey:@"abc"];
+    [dict setObject:@"" forKey:[NSNull null]];
     // Override point for customization after application launch.
     return YES;
 }
