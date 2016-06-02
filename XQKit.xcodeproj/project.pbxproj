@@ -16,6 +16,9 @@
 		A90E70991CF882A000541DCC /* XQSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E70981CF882A000541DCC /* XQSafe.m */; };
 		A90E70A81CF882B200541DCC /* XQSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E70981CF882A000541DCC /* XQSafe.m */; };
 		A90E70AA1CF882CC00541DCC /* XQSafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E70A91CF882CC00541DCC /* XQSafeTests.m */; };
+		A92E30D91D0005800019DD07 /* XQKVOMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A92E30D81D0005800019DD07 /* XQKVOMutableArray.m */; };
+		A92E30DA1D0005AA0019DD07 /* XQKVOMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A92E30D81D0005800019DD07 /* XQKVOMutableArray.m */; };
+		A92E30DC1D0005C00019DD07 /* XQKVOMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92E30DB1D0005C00019DD07 /* XQKVOMutableArrayTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A90E709E1CF882AB00541DCC /* XQKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XQKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90E70A21CF882AB00541DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90E70A91CF882CC00541DCC /* XQSafeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSafeTests.m; sourceTree = "<group>"; };
+		A92E30D71D0005800019DD07 /* XQKVOMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQKVOMutableArray.h; sourceTree = "<group>"; };
+		A92E30D81D0005800019DD07 /* XQKVOMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQKVOMutableArray.m; sourceTree = "<group>"; };
+		A92E30DB1D0005C00019DD07 /* XQKVOMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQKVOMutableArrayTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		A90E70951CF882A000541DCC /* XQKit */ = {
 			isa = PBXGroup;
 			children = (
+				A92E30D61D0005800019DD07 /* XQKVOMutableArray */,
 				A90E70961CF882A000541DCC /* XQSafe */,
 			);
 			path = XQKit;
@@ -128,9 +135,19 @@
 			isa = PBXGroup;
 			children = (
 				A90E70A91CF882CC00541DCC /* XQSafeTests.m */,
+				A92E30DB1D0005C00019DD07 /* XQKVOMutableArrayTests.m */,
 				A90E70A21CF882AB00541DCC /* Info.plist */,
 			);
 			path = XQKitTests;
+			sourceTree = "<group>";
+		};
+		A92E30D61D0005800019DD07 /* XQKVOMutableArray */ = {
+			isa = PBXGroup;
+			children = (
+				A92E30D71D0005800019DD07 /* XQKVOMutableArray.h */,
+				A92E30D81D0005800019DD07 /* XQKVOMutableArray.m */,
+			);
+			path = XQKVOMutableArray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +253,7 @@
 				A90E70861CF8824100541DCC /* ViewController.m in Sources */,
 				A90E70831CF8824000541DCC /* AppDelegate.m in Sources */,
 				A90E70801CF8824000541DCC /* main.m in Sources */,
+				A92E30D91D0005800019DD07 /* XQKVOMutableArray.m in Sources */,
 				A90E70991CF882A000541DCC /* XQSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92E30DC1D0005C00019DD07 /* XQKVOMutableArrayTests.m in Sources */,
 				A90E70A81CF882B200541DCC /* XQSafe.m in Sources */,
 				A90E70AA1CF882CC00541DCC /* XQSafeTests.m in Sources */,
+				A92E30DA1D0005AA0019DD07 /* XQKVOMutableArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +446,7 @@
 				A90E70941CF8824100541DCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90E70A51CF882AB00541DCC /* Build configuration list for PBXNativeTarget "XQKitTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +455,7 @@
 				A90E70A71CF882AB00541DCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
